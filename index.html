@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Locator</title>
+    
+    <!-- Karga daan ang MapTiler CSS ug JS para dili mag-blank ang mapa -->
+    <link href="https://maptiler.com" rel="stylesheet" />
+    <script src="https://maptiler.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Find a City using this Locator</h1>
+        
+        <form id="searchForm">
+            <label for="cityInput">City name </label>
+            <input type="text" id="cityInput" placeholder="Try Manila" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Sudlanan sa mapa -->
+    <div id="map"></div>
+
+    <!-- Imong kaugalingong JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
